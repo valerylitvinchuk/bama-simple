@@ -1,0 +1,12 @@
+@import "bourbon";
+
+@include font-face("OpenSansRegular", "../fonts/OpenSans/Regular/Regular", $file-formats: eot woff ttf);
+@include font-face("OpenSansBold", "../fonts/OpenSans/Bold/Bold", $file-formats: eot woff ttf);
+@include font-face("OpenSansBoldItalic", "../fonts/OpenSans/BoldItalic/BoldItalic", $file-formats: eot woff ttf);
+@include font-face("OpenSansExtraBold", "../fonts/OpenSans/ExtraBold/ExtraBold", $file-formats: eot woff ttf);
+@include font-face("OpenSansExtraBoldItalic", "../fonts/OpenSans/ExtraBoldItalic/ExtraBoldItalic", $file-formats: eot woff ttf);
+@include font-face("OpenSansItalic", "../fonts/OpenSans/Italic/Italic", $file-formats: eot woff ttf);
+@include font-face("OpenSansLight", "../fonts/OpenSans/Light/Light", $file-formats: eot woff ttf);
+@include font-face("OpenSansLightItalic", "../fonts/OpenSans/LightItalic/LightItalic", $file-formats: eot woff ttf);
+@include font-face("OpenSansSemibold", "../fonts/OpenSans/Semibold/Semibold", $file-formats: eot woff ttf);
+@include font-face("OpenSansSemiboldItalic", "../fonts/OpenSans/SemiboldItalic/SemiboldItalic", $file-formats: eot woff ttf);
