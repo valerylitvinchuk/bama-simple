@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-	width: 970px;
+	width: 940px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -27,13 +27,13 @@ body {
 
 .top-line {
 	@include font(19px, "OpenSansSemibold");
-	line-height: 1.3;
-	padding: 10px 0 15px;
+	line-height: 1.2;
+	padding: 5px 0 14px;
 }
 
 .time-schedule {
 	float: right;
-	margin-right: 30px;
+	margin-right: 24px;
 }
 
 .float-wrap {
@@ -43,7 +43,7 @@ body {
 }
 
 .phones {
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 
 	a {
 		color: inherit;
@@ -77,10 +77,10 @@ body {
 }
 
 .logo {
-	top: -100px;
+	top: -96px;
 	position: absolute;
-	width: 230px;
-	height: 230px;
+	width: 212px;
+	height: 212px;
 
 	a {
 		display: block;
@@ -119,13 +119,13 @@ body {
 	a {
 		@include font(12px);
 		text-transform: uppercase;
-		padding: 15px 10px;
+		padding: 10px 9px;
 	}
 }
 
 .side-bar {
-	width: 230px;
-	padding-top: 100px;
+	width: 218px;
+	padding-top: 77px;
 	text-align: center;
 	text-transform: uppercase;
 	float: left;
@@ -150,7 +150,7 @@ body {
 	ul {
 		@include listToNav;
 		@include font(13px);
-		padding: 0 15px;
+		padding: 0 18px;
 		margin-bottom: 40px;
 
 		li {
@@ -167,7 +167,7 @@ body {
 			a {
 				color: $darkGrey;
 				display: block;
-				padding: 10px 0;
+				padding: 5px 0;
 			}
 		}
 
@@ -188,8 +188,8 @@ body {
 
 main {
 	float: right;
-	width: 725px;
-	padding-left: 15px;
+	width: 698px;
+	// padding-left: 22px;
 }
 
 .main-pic {
@@ -197,13 +197,16 @@ main {
 	height: 220px;
 	background: url('../img/banner.jpg') center center no-repeat;
 	background-size: cover;
+	margin-bottom: 9px;
 }
 
 h1 {
 	text-align: center;
+	margin: 0;
 	@include font(16px, "OpenSansSemibold");
 
 	&:after {
+		margin: 5px 0 10px;
 		content: "";
 		display: block;
 		height: 4px;
@@ -215,19 +218,21 @@ h1 {
 .about {
 	@include font(12px);
 	text-align: justify;
+	margin: 0 0 30px;
+	line-height: 1.3;
 }
 
 .products {
 	font-size: 0;
 	width: 100%;
-	padding: 0 20px;
+	// padding: 0 20px;
 	// text-align: center;
 }
 
 .product-item {
 	display: inline-block;
-	margin-bottom: 35px;
-	margin-right: 45px;
+	margin-bottom: 28px;
+	margin-right: 34px;
 	color: $darkGrey;
 	box-shadow: 0 0 10px 0 #ddd;
 	text-decoration: none;
@@ -258,7 +263,7 @@ h1 {
 
 .product-desc {
 	background: $lightGrey;
-	padding: 20px 0;
+	padding: 20px 0 13px;
 	text-align: center;
 }
 
@@ -278,6 +283,161 @@ h1 {
 .product-price {
 	@include font(18px, "OpenSansBold");
 	text-transform: uppercase;
+}
+
+.insta-widget {
+	margin-bottom: 20px;
+}
+
+.insta-title {
+	@include font(12px);
+	text-align: center;
+	color: #fff;
+	background: $darkGrey;
+	padding: 15px 0;
+	margin-bottom: 20px;
+}
+
+footer {
+	background: $darkGrey;
+	padding: 15px 0 10px;
+	color: #fff;
+
+	.left {
+		text-align: left;
+		float: left;
+	}
+
+	.phones, .email {
+		color: #fff;
+		text-align: left;
+
+		a {
+			color: #fff;
+		}
+	}
+
+	.phones {
+		@include font(19px, "OpenSansSemibold");
+		margin-bottom: 15px;
+
+		a {
+			display: block;
+			line-height: 1.2;
+		}
+	}
+
+	.email {
+		@include font(14px);
+
+		a {
+			color: #fff;
+
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+
+	.copyright {
+		@include font(12px);
+
+		p {
+			margin: 0;
+		}
+
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+
+	.right {
+		text-align: right;
+		float: right;
+	}
+}
+
+.socials {
+	margin-bottom: 34px;
+}
+
+.socials-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	text-align: right;
+}
+
+.socials-item {
+	display: inline-block;
+	margin-left: 15px;
+	transition: all .1s ease-in-out;
+
+	&:hover {
+		transform: translateY(1px);
+	}
+}
+
+.socials-link {
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: url('../img/socials-sprite.png') no-repeat;
+	transition: opacity .1s ease-in-out;
+
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+}
+
+.yt-btn {
+	background-position: -10px -11px;
+
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.ok-btn {
+	background-position: -81px -10px;
+
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.vk-btn {
+	background-position: -154px -10px;
+
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.tw-btn {
+	background-position: -228px -10px;
+
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.ig-btn {
+	background-position: -303px -10px;
+
+	&:hover {
+		opacity: .8;
+	}
+}
+
+.legal {
+	text-align: right;
+	color: #fff;
+	font-size: 10px;
+	font-family: "OpenSansLight", sans-serif;
 }
 
 .hidden {
