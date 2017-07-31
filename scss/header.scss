@@ -59,6 +59,10 @@ body {
 .email {
 	@include font(14px);
 
+	div {
+		display: inline-block;
+	}
+
 	a {
 		color: inherit;
 		text-decoration: none;
@@ -66,6 +70,12 @@ body {
 		&:hover, &:focus {
 			text-decoration: underline;
 		}
+	}
+
+	&:before {
+		content: '\2709';
+		display: inline-block;
+		// font-size: 14px;
 	}
 }
 
@@ -197,12 +207,12 @@ main {
 	height: 220px;
 	background: url('../img/banner.jpg') center center no-repeat;
 	background-size: cover;
-	margin-bottom: 9px;
+	// margin-bottom: 9px;
 }
 
 h1 {
 	text-align: center;
-	margin: 0;
+	margin: 10px 0 0;
 	@include font(16px, "OpenSansSemibold");
 
 	&:after {
@@ -246,6 +256,42 @@ h1 {
 		transform: translateY(2px);
 		transition: all .3s ease;
 		// text-decoration: none;
+	}
+
+	&:nth-child(1) .product-img {
+		background-image: url('../img/001.jpg');
+	}
+
+	&:nth-child(2) .product-img {
+		background-image: url('../img/002.jpg');
+	}
+
+	&:nth-child(3) .product-img {
+		background-image: url('../img/003.jpg');
+	}
+
+	&:nth-child(4) .product-img {
+		background-image: url('../img/004.jpg');
+	}
+
+	&:nth-child(5) .product-img {
+		background-image: url('../img/005.jpg');
+	}
+
+	&:nth-child(6) .product-img {
+		background-image: url('../img/006.jpg');
+	}
+
+	&:nth-child(7) .product-img {
+		background-image: url('../img/007.jpg');
+	}
+
+	&:nth-child(8) .product-img {
+		background-image: url('../img/008.jpg');
+	}
+
+	&:nth-child(9) .product-img {
+		background-image: url('../img/009.jpg');
 	}
 
 	// &:hover, &:focus {
