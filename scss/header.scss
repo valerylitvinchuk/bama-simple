@@ -25,10 +25,31 @@ body {
 	clear: both;
 }
 
+// .white-bg {
+// 	height: 89px;
+// 	background: #fff;
+// }
+
+// .dark-bg {
+// 	height: 39px;
+// 	background: $darkGrey;
+// }
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	// left: 50%;
+	// margin-left: -485px;
+	z-index: 2;
+}
+
 .top-line {
 	@include font(19px, "OpenSansSemibold");
 	line-height: 1.2;
 	padding: 5px 0 14px;
+	background-color: rgba(255,255,255,0.85);
 }
 
 .time-schedule {
@@ -96,7 +117,7 @@ body {
 }
 
 .bottom-line {
-	background: $darkGrey;
+	background-color: rgba(0,0,0,0.8);
 	color: #fff;
 	@include font(12px);
 	position: relative;
@@ -110,7 +131,8 @@ body {
 
 	a {
 		display: block;
-		background: url('../img/logo.png') center center no-repeat #fff;
+		background: url('../img/logo.jpg') center center no-repeat #000;
+		background-size: 265px;
 		height: 100%;
 		border-radius: 50% 50%;
 	}
@@ -147,6 +169,10 @@ body {
 		text-transform: uppercase;
 		padding: 10px 9px;
 	}
+}
+
+.content {
+	margin-top: 128px;
 }
 
 .side-bar {
@@ -215,6 +241,10 @@ body {
 main {
 	float: right;
 	width: 698px;
+}
+
+.fotorama {
+	z-index: 1;
 }
 
 h1 {
@@ -347,11 +377,12 @@ h1 {
 	text-align: center;
 	color: #fff;
 	background: $darkGrey;
-	padding: 15px 0;
-	margin-bottom: 20px;
+	padding: 8px 0;
+	margin-bottom: 25px;
 }
 
 footer {
+	position: relative;
 	background: $darkGrey;
 	padding: 15px 0 10px;
 	color: #fff;
@@ -373,6 +404,7 @@ footer {
 	.phones {
 		@include font(19px, "OpenSansSemibold");
 		margin-bottom: 15px;
+		margin-left: 50px;
 
 		a {
 			display: block;
@@ -388,6 +420,7 @@ footer {
 
 			&:hover {
 				color: #fff;
+				text-decoration: underline;
 			}
 		}
 	}
@@ -402,6 +435,10 @@ footer {
 		a {
 			color: #fff;
 			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 
@@ -411,8 +448,18 @@ footer {
 	}
 }
 
+.li-counter {
+	position: absolute;
+	top: 17px;
+
+	img {
+		width: 40px;
+		height: 40px;
+	}
+}
+
 .socials {
-	margin-bottom: 34px;
+	margin-bottom: 42px;
 }
 
 .socials-list {
@@ -439,6 +486,7 @@ footer {
 	height: 45px;
 	border-radius: 50%;
 	background: url('../img/socials-sprite.png') no-repeat;
+	background-size: 340px;
 	transition: opacity .1s ease-in-out;
 
 	&:hover, &:focus {
@@ -447,7 +495,7 @@ footer {
 }
 
 .yt-btn {
-	background-position: -10px -11px;
+	background-position: -8px -8px;
 
 	&:hover {
 		opacity: .8;
@@ -455,7 +503,7 @@ footer {
 }
 
 .ok-btn {
-	background-position: -81px -10px;
+	background-position: -62px -8px;
 
 	&:hover {
 		opacity: .8;
@@ -463,7 +511,7 @@ footer {
 }
 
 .vk-btn {
-	background-position: -154px -10px;
+	background-position: -117px -8px;
 
 	&:hover {
 		opacity: .8;
@@ -471,7 +519,7 @@ footer {
 }
 
 .tw-btn {
-	background-position: -228px -10px;
+	background-position: -173px -8px;
 
 	&:hover {
 		opacity: .8;
@@ -479,7 +527,7 @@ footer {
 }
 
 .ig-btn {
-	background-position: -303px -10px;
+	background-position: -230px -8px;
 
 	&:hover {
 		opacity: .8;
@@ -493,10 +541,12 @@ footer {
 	font-family: "OpenSansLight", sans-serif;
 }
 
-@keyframes slider{
-	0% {left: 0px;}
-	50% {left: -698px;}
-	100% {left: -1396px;}
+.gallery {
+	margin-top: 30px;
+
+	a {
+		outline: none;
+	}
 }
 
 .hidden {
