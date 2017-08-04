@@ -58,19 +58,18 @@ header {
 	margin-right: 24px;
 	position: relative;
 
-	&:before {
-		top: 5px;
-		left: -50px;
-		position: absolute;
-		display: block;
-		width: 48px;
-		height: 48px;
-		content: '';
-		background-image: url('../img/socials-sprite.png');
-		background-position: -761px -6px;
-		background-size: 270px;
-		overflow: hidden;
-	}
+	// &:before {
+	// 	top: 2px;
+	// 	left: -30px;
+	// 	position: absolute;
+	// 	display: block;
+	// 	width: 20px;
+	// 	height: 20px;
+	// 	content: '';
+	// 	background-image: url('../img/sprite.png');
+	// 	background-position: -978px -21px;
+	// 	overflow: hidden;
+	// }
 }
 
 .float-wrap {
@@ -128,6 +127,7 @@ header {
 	position: absolute;
 	width: 212px;
 	height: 212px;
+	// background: #fff;
 
 	a {
 		display: block;
@@ -135,6 +135,8 @@ header {
 		background-size: 265px;
 		height: 100%;
 		border-radius: 50% 50%;
+		// border: none;
+		// outline: none;
 	}
 }
 
@@ -402,9 +404,9 @@ footer {
 	}
 
 	.phones {
-		@include font(19px, "OpenSansSemibold");
+		@include font(16px, "OpenSansSemibold");
 		margin-bottom: 15px;
-		margin-left: 50px;
+		margin-left: 43px;
 
 		a {
 			display: block;
@@ -413,7 +415,7 @@ footer {
 	}
 
 	.email {
-		@include font(14px);
+		@include font(13px);
 
 		a {
 			color: #fff;
@@ -426,7 +428,7 @@ footer {
 	}
 
 	.copyright {
-		@include font(12px);
+		@include font(10px);
 
 		p {
 			margin: 0;
@@ -453,13 +455,13 @@ footer {
 	top: 17px;
 
 	img {
-		width: 40px;
-		height: 40px;
+		width: 33px;
+		height: 33px;
 	}
 }
 
 .socials {
-	margin-bottom: 42px;
+	margin-bottom: 24px;
 }
 
 .socials-list {
@@ -485,8 +487,8 @@ footer {
 	width: 45px;
 	height: 45px;
 	border-radius: 50%;
-	background: url('../img/socials-sprite.png') no-repeat;
-	background-size: 340px;
+	background: url('../img/sprite.png') no-repeat;
+	// background-size: 340px;
 	transition: opacity .1s ease-in-out;
 
 	&:hover, &:focus {
